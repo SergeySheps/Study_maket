@@ -1,3 +1,10 @@
+.font-header {
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
 body {
   margin: 0;
   padding: 0;
@@ -73,6 +80,42 @@ menu {
 }
 .header__slaider-container {
   position: absolute;
-  top: 0;
-  left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.header__slaider-container-item {
+  margin: 14px;
+}
+.header__slaider-mainText {
+  font-size: 64px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.header__slaider-sideText {
+  font-size: 22px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.header__slaider-button {
+  font-size: 18px;
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  background: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 10px 12px;
+}
+.header__slaider-button:hover {
+  cursor: pointer;
 }
