@@ -1,13 +1,33 @@
-.font-header {
+.mainFont {
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
 }
+.arrow {
+  position: absolute;
+}
+.arrow:hover {
+  cursor: pointer;
+}
 body {
   margin: 0;
   padding: 0;
+}
+.header__slaider_leftArrow {
+  position: absolute;
+  left: 20px;
+}
+.header__slaider_leftArrow:hover {
+  cursor: pointer;
+}
+.header__slaider_rightArrow {
+  position: absolute;
+  right: 20px;
+}
+.header__slaider_rightArrow:hover {
+  cursor: pointer;
 }
 header {
   width: 100%;
@@ -47,11 +67,12 @@ menu {
   vertical-align: middle;
   padding: 23px 25px;
   font-weight: bold;
+  border-right: 2px solid #292929;
 }
 .menu__rightside ul li:hover {
   background: #2a2a2a;
   cursor: pointer;
-  color: #9f66c5;
+  color: #b297c4;
 }
 .menu__logo {
   margin-right: auto;
@@ -73,6 +94,7 @@ menu {
 }
 .header__slaider-image {
   border: 20px solid white;
+  border-radius: 5px 5px 0px 0px;
   border-bottom: 0;
   width: 100%;
   height: 100%;

@@ -1,0 +1,55 @@
+.mainFont {
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+main {
+  background: #f0f0f0;
+}
+.features {
+  display: flex;
+  max-width: 1170px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 7px 21px 44px -31px rgba(0, 0, 0, 0.75);
+  border-radius: 0px 0px 5px 5px;
+}
+.features_item {
+  position: relative;
+  flex: 300px 1 1;
+}
+.features__container {
+  margin: 30px 70px 40px 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+.features__container_mainText {
+  font-family: "FjallaOne";
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 17px;
+  color: #747474;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.features__container_sideText {
+  font-family: "Oxygen";
+  font-size: 13px;
+  color: #979797;
+  text-decoration: underline;
+}
+.shadow {
+  background-image: url("../images/shadow.png");
+  position: absolute;
+  left: 100%;
+  width: 9px;
+  height: 180px;
+  z-index: 135;
+}

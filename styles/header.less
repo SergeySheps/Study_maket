@@ -1,10 +1,17 @@
-@width_viewScreen: 1170px;
-@menu_textTransform :uppercase;
+
 @import "mixins.less";
 
 body{
     margin:0;
     padding: 0;
+}
+.header__slaider_leftArrow{
+    .arrow();
+    left: 20px;
+}
+.header__slaider_rightArrow{
+    .arrow();
+    right: 20px;
 }
 header{
     width: 100%;
@@ -46,16 +53,17 @@ menu{
     vertical-align: middle;
     padding: 23px 25px;
     font-weight: bold;
+    border-right: 2px solid #292929;
     &:hover{
         background: #2a2a2a;
         cursor: pointer;
-        color: #9f66c5;
+        color: @pink_color;
     }
 }
 .menu__logo{
     margin-right: auto;
     font-size: 38px;
-    background: #b297c4;
+    background: @pink_color;
     border-radius: 5px;
     position: absolute;
     top: -11px;
@@ -73,6 +81,7 @@ menu{
 }
 .header__slaider-image{
     border: 20px solid white;
+    border-radius: 5px 5px 0px 0px;
     border-bottom: 0;
     width: 100%;
     height: 100%;
@@ -91,15 +100,15 @@ menu{
 }
 .header__slaider-mainText{
     font-size: 64px;
-    .font-header();
+    .mainFont();
 }
 .header__slaider-sideText{
     font-size: 22px;
-    .font-header();
+    .mainFont();
 }
 .header__slaider-button{
     font-size: 18px;
-    .font-header();
+    .mainFont();
     background: transparent;
     border: 3px solid @loadingTextColor ;
     border-radius: 5px;
