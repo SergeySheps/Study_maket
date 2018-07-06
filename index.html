@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/media.css">
+    
     <title>Document</title>
 </head>
 
@@ -18,22 +20,33 @@
                 <div class="menu__logo">
                     Sitename
                 </div>
-                <div class="menu__rightside">
-                    <ul>
+                <nav class="menu__rightside">
+                    <div class="menu__pop-up">≡</div>
+                    <nav class="menu__pop-up-open">
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Services</li>
+                            <li>Folio</li>
+                            <li>Contact</li>
+                            <li class="funcFromSlider">loareet ipon</li>
+                        </ul>
+                    </nav>
+                    <ul class="menu__rightside_MainMenu">
                         <li>Home</li>
                         <li>About</li>
                         <li>Services</li>
                         <li>Folio</li>
                         <li>Contact</li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </menu>
         <div class="header__slaider">
             <img src="images/arrow-left.png" alt="" class="header__slaider_leftArrow">
             <img src="images/slaider_header_1.jpg" alt="" class="header__slaider-image ">
             <div class="header__slaider-container">
-                <img src="images/perosn.png" alt="" class="header__image-person header__slaider-container-item">
+                <img src="images/perosn.png" alt="" class="header__slaider_image-person header__slaider-container-item">
                 <div class="header__slaider-mainText header__slaider-container-item">Nunc digno lorem dol</div>
                 <div class="header__slaider-sideText header__slaider-container-item">Lorem ipsum dolor</div>
                 <button class="header__slaider-button header__slaider-container-item">Loareet ipon</button>
@@ -68,6 +81,7 @@
                 </div>
             </div>
             <div class="features_item">
+                    <div class="shadow shadow-last"></div>
                 <div class="features__container">
                     <img src="images/dialog.png" alt="" class="features_image">
                     <div class="features__container_mainText">egestasmod</div>
@@ -267,6 +281,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

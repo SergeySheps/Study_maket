@@ -11,6 +11,16 @@
 .arrow:hover {
   cursor: pointer;
 }
+.MyriadProFont {
+  font-size: 13px;
+  font-family: "Myriad Pro";
+}
+.OxygenFont {
+  font-family: "Oxygen";
+  font-size: 13px;
+  color: #979797;
+  text-decoration: underline;
+}
 body {
   margin: 0;
   padding: 0;
@@ -54,14 +64,18 @@ menu {
   position: relative;
   align-content: center;
 }
-.menu__rightside ul {
+.menu__rightside {
+  position: relative;
+}
+.menu__rightside_MainMenu {
   display: flex;
   align-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  position: relative;
 }
-.menu__rightside ul li {
+.menu__rightside_MainMenu li {
   display: inline-block;
   font-size: 14px;
   vertical-align: middle;
@@ -69,10 +83,39 @@ menu {
   font-weight: bold;
   border-right: 2px solid #292929;
 }
-.menu__rightside ul li:hover {
+.menu__rightside_MainMenu li:hover {
   background: #2a2a2a;
   cursor: pointer;
   color: #b297c4;
+}
+.menu__pop-up,
+.menu__pop-up-open {
+  display: none;
+}
+.menu__pop-up-open {
+  position: absolute;
+  left: -270px;
+  background: #292929;
+  border-radius: 6px;
+  z-index: 3;
+}
+.menu__pop-up-open ul {
+  padding: 40px;
+}
+.menu__pop-up-open li {
+  list-style: none;
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  font-size: 30px;
+  padding: 15px;
+}
+.menu__pop-up-open li:hover {
+  cursor: pointer;
+  background: #383838;
+  color: #b297c4;
+}
+.visibleDisplay {
+  display: block;
 }
 .menu__logo {
   margin-right: auto;
@@ -91,6 +134,10 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header__slaider_image-person {
+  width: 80px;
+  height: 90px;
 }
 .header__slaider-image {
   border: 20px solid white;

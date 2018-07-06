@@ -39,26 +39,57 @@ menu{
     position: relative;
     align-content: center;
 }
-
-.menu__rightside ul{
-    display: flex;
-    align-content: center;
-    list-style: none;
-    padding:0;
-    margin: 0;
+.menu__rightside{
+    position: relative;
+    &_MainMenu{
+        display: flex;
+        align-content: center;
+        list-style: none;
+        padding:0;
+        margin: 0;
+        position: relative;
+    }
+    &_MainMenu li{
+        display: inline-block;
+        font-size: 14px;
+        vertical-align: middle;
+        padding: 23px 25px;
+        font-weight: bold;
+        border-right: 2px solid #292929;
+        &:hover{
+            background: #2a2a2a;
+            cursor: pointer;
+            color: @pink_color;
+        }
+    }
 }
-.menu__rightside ul li{
-    display: inline-block;
-    font-size: 14px;
-    vertical-align: middle;
-    padding: 23px 25px;
-    font-weight: bold;
-    border-right: 2px solid #292929;
+
+.menu__pop-up,.menu__pop-up-open{
+    display: none;
+}
+.menu__pop-up-open{
+    position: absolute;
+    left: -270px;
+    background: #292929;
+    border-radius: 6px;
+    z-index: 3;
+}
+.menu__pop-up-open ul{
+    padding: 40px;
+}
+.menu__pop-up-open li{
+    list-style: none;
+    .MyriadProFont();
+    font-size: 30px;
+    padding: 15px;
     &:hover{
-        background: #2a2a2a;
         cursor: pointer;
+        background: #383838;
         color: @pink_color;
     }
+}
+.visibleDisplay{
+    display: block;
 }
 .menu__logo{
     margin-right: auto;
@@ -78,6 +109,10 @@ menu{
     justify-content: center;
     align-items: center;
 
+}
+.header__slaider_image-person{
+    width: @header__image-person_width;
+    height: @header__image-person_height;
 }
 .header__slaider-image{
     border: 20px solid white;
@@ -99,15 +134,15 @@ menu{
     margin: 14px;
 }
 .header__slaider-mainText{
-    font-size: 64px;
+    font-size: @HeaderMainText-size;
     .mainFont();
 }
 .header__slaider-sideText{
-    font-size: 22px;
+    font-size: @HeaderSideText-size;
     .mainFont();
 }
 .header__slaider-button{
-    font-size: 18px;
+    font-size: @HeaderButtonText-size;
     .mainFont();
     background: transparent;
     border: 3px solid @loadingTextColor ;
