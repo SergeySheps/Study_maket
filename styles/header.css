@@ -2,7 +2,7 @@
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
 }
 .arrow {
@@ -27,22 +27,22 @@ body {
   margin: 0;
   padding: 0;
 }
-.header__slaider_leftArrow {
+.header__slider_leftArrow {
   position: absolute;
   align-self: center;
   margin-top: 8px;
   left: 20px;
 }
-.header__slaider_leftArrow:hover {
+.header__slider_leftArrow:hover {
   cursor: pointer;
 }
-.header__slaider_rightArrow {
+.header__slider_rightArrow {
   position: absolute;
   align-self: center;
   margin-top: 8px;
   right: 20px;
 }
-.header__slaider_rightArrow:hover {
+.header__slider_rightArrow:hover {
   cursor: pointer;
 }
 header {
@@ -51,7 +51,7 @@ header {
   background-size: 100% 100%;
   position: relative;
   margin: 0;
-  padding-top: 70px;
+  padding-top: 60px;
 }
 menu {
   margin: 0;
@@ -61,7 +61,7 @@ menu {
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   color: #ffffff;
   margin-bottom: 60px;
@@ -84,6 +84,7 @@ menu {
   padding: 0;
   margin: 0;
   position: relative;
+  letter-spacing: 0.9px;
 }
 .menu__rightside_MainMenu li {
   display: inline-block;
@@ -91,11 +92,11 @@ menu {
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
-  padding: 22px 18px;
+  padding: 21px 17px;
   border-right: 1px solid #292929;
 }
 .menu__rightside_MainMenu li:hover {
@@ -137,25 +138,25 @@ menu {
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   color: #ffffff;
-  font-size: 44px;
+  font-size: 42px;
   background: #b297c4;
   border-radius: 5px;
   position: absolute;
   top: -12px;
   left: 0;
-  padding: 19px 23px 12px;
+  padding: 12px 23px 12px;
 }
-.header__slaider {
+.header__slider {
   max-width: 1170px;
   margin: auto;
   position: relative;
   display: flex;
   justify-content: center;
 }
-.header__slaider-image {
+.header__slider-image {
   border: 20px solid white;
   border-radius: 5px 5px 0px 0px;
   border-bottom: 0;
@@ -163,47 +164,47 @@ menu {
   height: 100%;
   box-sizing: border-box;
 }
-.header__slaider-container {
+.header__slider-container {
   position: absolute;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
   align-items: center;
 }
-.header__slaider_image-person {
+.header__slider_image-person {
   margin-top: 87px;
   margin-bottom: 20px;
   width: 80px;
   height: 90px;
 }
-.header__slaider-mainText {
+.header__slider-mainText {
   font-size: 64px;
   margin-bottom: 9px;
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
 }
-.header__slaider-sideText {
+.header__slider-sideText {
   font-size: 13px;
   font-family: "Myriad Pro";
   font-size: 22px;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 12px;
 }
-.header__slaider-button {
+.header__slider-button {
   font-size: 18px;
   font-family: "FjallaOne";
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   background: transparent;
   border: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   padding: 8px 10px;
 }
-.header__slaider-button:hover {
+.header__slider-button:hover {
   cursor: pointer;
 }
