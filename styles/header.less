@@ -5,14 +5,7 @@ body{
     margin:0;
     padding: 0;
 }
-.header__slider_leftArrow{
-    .arrow();
-    left: 20px;
-}
-.header__slider_rightArrow{
-    .arrow();
-    right: 20px;
-}
+
 header{
     width: 100%;
     background: url(../images/topbg.jpg);
@@ -28,8 +21,7 @@ menu{
     width: 100%;
     background: #383838;
     .mainFont();
-    color: @backGr-color_newsCard;     
-    margin-bottom: 60px;  
+    color: @backGr-color_newsCard;      
     
 }
 .menu__container{
@@ -106,57 +98,6 @@ menu{
     top: -12px;
     left: 0;
     padding: 12px 23px 12px;
-}
-.header__slider{
-    max-width: @width_viewScreen;
-    margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-}
-.header__slider-image{
-    border: 20px solid white;
-    border-radius: 5px 5px 0px 0px;
-    border-bottom: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    
-}
-.header__slider-container{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    align-items: center;
+    z-index: 3;
 }
 
-.header__slider_image-person{
-    margin-top: 87px;
-    margin-bottom: 20px;
-    width: @header__image-person_width;
-    height: @header__image-person_height;
-}
-.header__slider-mainText{
-    font-size: @HeaderMainText-size;
-    margin-bottom: 9px;
-    .mainFont();
-}
-.header__slider-sideText{
-    .MyriadProFont();
-    font-size: @HeaderSideText-size;
-    color: @loadingTextColor;  
-    margin-bottom: 12px; 
-}
-.header__slider-button{
-    font-size: @HeaderButtonText-size;
-    .mainFont();
-    background: transparent;
-    border: 3px solid @loadingTextColor ;
-    border-radius: 5px;
-    padding: 8px 10px;
-    &:hover{
-        cursor: pointer;
-    }
-}
