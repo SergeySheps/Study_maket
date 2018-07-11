@@ -1,0 +1,158 @@
+@import "mixins.less";
+@Width-1: 1024px;
+@Width-2: 768px;
+@Width-3: 412px;
+@media only screen and (max-width: 1176px), only screen and (max-device-width: 1176px){
+    .main__content-column_last{
+        order: 1;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: @Width-1), only screen and (max-device-width: @Width-1){
+    @font-size_correction: 1.5;
+    .banner__slider{
+        &-mainText{
+            font-size: @HeaderMainText-size/ @font-size_correction;
+        }
+        &-sideText{
+            font-size: @HeaderSideText-size / @font-size_correction;
+        }
+        &-button{
+            font-size: @HeaderButtonText-size / @font-size_correction;
+        }
+        &_image-person{
+            margin-top: 87px;
+            height: @header__image-person_height / @font-size_correction;
+            width: @header__image-person_width / @font-size_correction;
+        }
+
+    }
+    .menu__rightside-mainMenu-item{
+        padding: 18px 20px;
+        font-size: 13px;
+    }
+    .menu__logo{
+        font-size: 33px;
+        padding: 15px 20px;
+        top: -6px;
+    }
+    
+}
+@media only screen and (max-width: 910px), only screen and (max-device-width: 910px){
+    @font-size_correction:1.6;
+    .features__container{
+        margin: 30px/@font-size_correction 70px/@font-size_correction 40px/@font-size_correction 65px/@font-size_correction
+    }
+    .banner__slider_image-person{
+        margin-top: 57px;
+        height: @header__image-person_height / @font-size_correction;
+        width: @header__image-person_width / @font-size_correction;
+    }
+}
+
+@media only screen and (max-width: @Width-2), only screen and (max-device-width: @Width-2){
+    @font-size_correction: 1.8;
+    .banner__slider{
+        &-mainText{
+            font-size: @HeaderMainText-size/ @font-size_correction;
+        }
+        &-sideText{
+            font-size: @HeaderSideText-size / @font-size_correction;
+        }
+        &-button{
+            font-size: @HeaderButtonText-size / @font-size_correction;
+        }
+        &_image-person{
+            margin-top: 47px;
+            height: @header__image-person_height / @font-size_correction;
+            width: @header__image-person_width / @font-size_correction;
+        }
+    }
+    .features__container{
+        margin: 30px/@font-size_correction 70px/@font-size_correction 40px/@font-size_correction 65px/@font-size_correction
+    }
+    .menu__rightside-mainMenu-item{
+        padding: 13px 15px;
+        font-size: 12px;
+    }
+    .menu__logo{
+        font-size: 28px;
+        padding: 10px 15px;
+        top: -5px;
+    } 
+    header{
+        padding-top: 30px;
+    } 
+
+}
+
+@media only screen and (max-width: 630px), only screen and (max-device-width: 630px){
+    @font-size_correction: 2.1;
+    @padding-size_correction: 1;
+    .banner__slider{
+        &-mainText{
+            font-size: @HeaderMainText-size/ @font-size_correction;
+        }
+        &-sideText{
+            font-size: @HeaderSideText-size / @font-size_correction;
+        }
+        &-button{
+            font-size: @HeaderButtonText-size / @font-size_correction;
+        }
+        &_image-person{
+            margin-top: 37px;
+            height: @header__image-person_height / @font-size_correction;
+            width: @header__image-person_width / @font-size_correction;
+        }
+    }
+    .menu__rightside-mainMenu-item{
+        padding: 10px + @padding-size_correction 12px + @padding-size_correction;
+        font-size: 10px + @padding-size_correction;
+    }
+    .menu__logo{
+        font-size: 24px + @padding-size_correction;
+        padding: 6px + @padding-size_correction 11px + @padding-size_correction;
+        top: -2px - @padding-size_correction;
+    } 
+
+}
+@media only screen and (max-width: 565px), only screen and (max-device-width: 565px){
+    @padding-size_correction: 8px;
+
+    header{
+        padding-bottom: 20px;
+    }
+    .menu__logo{
+        font-size: 24px + @padding-size_correction;
+        padding: 6px + @padding-size_correction 11px + @padding-size_correction;
+        top: -2px;
+    } 
+    .menu__pop-up_toggle{
+        display: block;
+        padding: 14px 20px;
+        background-color: #202529;
+        font-size: 20px + @padding-size_correction;
+        font-weight: bold;
+        &:hover{
+            cursor: pointer;
+            color: @pink_color;
+        }
+    }
+    .menu__rightside-mainMenu{
+        display: none;
+    }
+    .banner__slider{
+        display: none;
+    }
+    .funcFromSlider{
+        color: red;
+    }
+    
+
+}
+@media only screen and (max-width: 485px), only screen and (max-device-width: 485px){
+    .shadow_last{
+        display: block;
+    }
+}
