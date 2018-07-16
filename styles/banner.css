@@ -14,6 +14,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 3;
+  background: url("../images/arrow-left.png");
 }
 .arrow:hover {
   cursor: pointer;
@@ -35,7 +36,7 @@
   display: flex;
   justify-content: center;
 }
-.banner__slider_leftArrow {
+.banner__slider-arrow_left {
   position: absolute;
   align-self: center;
   margin-top: 8px;
@@ -47,10 +48,10 @@
   left: 20px;
   background: url("../images/arrow-left.png");
 }
-.banner__slider_leftArrow:hover {
+.banner__slider-arrow_left:hover {
   cursor: pointer;
 }
-.banner__slider_rightArrow {
+.banner__slider-arrow_right {
   position: absolute;
   align-self: center;
   margin-top: 8px;
@@ -59,10 +60,11 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 3;
+  background: url("../images/arrow-left.png");
   right: 20px;
-  background: url("../images/arrow-right.png");
+  transform: rotate(180deg);
 }
-.banner__slider_rightArrow:hover {
+.banner__slider-arrow_right:hover {
   cursor: pointer;
 }
 .banner__slider-wrapper {

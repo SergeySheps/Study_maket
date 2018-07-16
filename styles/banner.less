@@ -6,16 +6,16 @@
     position: relative;
     display: flex;
     justify-content: center;
-    &_leftArrow{
+    &-arrow_left{
         .arrow();
         left: 20px;
         background: url("../images/arrow-left.png");
     
     }
-    &_rightArrow{
+    &-arrow_right{
         .arrow();
         right: 20px;
-        background: url("../images/arrow-right.png");
+        transform: rotate(180deg);
     }
     &-wrapper{
         background: url(../images/topbg.jpg);
@@ -85,35 +85,33 @@
         position: relative;
         flex: 150px 1 1;
     }
-
-}
-
-.features__container{
-    margin: @features_container-margin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    text-align: center;
-    width: 100%;
-    max-width: 130px;
-    &-mainText{
-        .mainFont();
-        font-size: 17px;
-        color: @gray_color-upperCase;
-        margin-top: 20px;
-        margin-bottom: 2px;
-    }
-    &-sideText{
-        .OxygenFont();
+    &__container{
+        margin: @features_container-margin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        text-align: center;
+        width: 100%;
+        max-width: 130px;
+        &-mainText{
+            .mainFont();
+            font-size: 17px;
+            color: @gray_color-upperCase;
+            margin-top: 20px;
+            margin-bottom: 2px;
+        }
+        &-sideText{
+            .OxygenFont();
+        }
     }
 }
+
 
 .shadow {
     background-image: url("../images/shadow.png");
     background-repeat: no-repeat;
     position: absolute;
-    // left: calc(100% - @shadow-width);
     left: calc(100% + 20px);
     width: @shadow-width;
     background-size: 100% 100%;
